@@ -1,6 +1,3 @@
-imagePullSecrets:
-  - name: quay-registry
-
 image:
   repository: "nettivastaava/pulsar-node"
   tag: "latest"
