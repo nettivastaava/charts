@@ -1,0 +1,26 @@
+imagePullSecrets:
+  - name: quay-registry
+
+image:
+  repository: "nettivastaava/pulsar-node"
+  tag: "latest"
+  pullPolicy: Always
+
+securityContext:
+  fsGroup: 2000
+  runAsNonRoot: true
+  runAsUser: 1000
+
+resources:
+  requests:
+    memory: 128Mi
+    cpu: 100m
+  limits:
+    memory: 256Mi
+    cpu: 1000m
+
+timer1: 50
+timer2: 1000
+count: 3
+
+
