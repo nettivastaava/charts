@@ -2,7 +2,7 @@ name: kafka-node
 
 image:
   repository: "docker.io/nettivastaava/kafka-node"
-  tag: "test"
+  tag: "latest"
   pullPolicy: Always
 
 securityContext:
